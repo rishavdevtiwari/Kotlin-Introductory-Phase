@@ -138,40 +138,40 @@ fun main() {
     //------------------------------------------------------------
     //Task
 
-//    val dict = mapOf(
-//        "sophisticated" to "difficult to understand",
-//        "glow" to "bright and luminiscent",
-//        "breeze" to "a strong gust of wind",
-//        "crave" to "a strong urge to"
-//    )
-//
-//    while (true) {
-//        println("Available words in dictionary ")
-//        println("[sophisticated],[glow],[breeze],[crave]")
-//        println("Enter a word: ")
-//        val input: String = readln().trim().lowercase()
-//
-//        if (dict[input] == null) { //error handling for word out of dict
-//            println("Word '$input' not found in dictionary")
-//        } else {
-//            println(dict[input])
-//        }
-//
-//        println("Press 0 to Quit, Enter 1 to continue : ")
-//        //var input2: Int = readln().toInt()
-//
-//        var input2: Int = readln().toIntOrNull() ?: 1
-//        //toIntOrNull is used incase user enters something except 0 or 1
-//        //If user enters 'abc' converts anything except Int to Null
-//        //if null value is received ?:1 changes it to 1
-//
-//        if (input2 == 0) {
-//            println("exiting")
-//            break //exits out of program
-//            //while loops condition is deferred so exit
-//            //while(true) creates infinite loop
-//        }
-//    }
+    val dict = mapOf(
+        "sophisticated" to "difficult to understand",
+        "glow" to "bright and luminiscent",
+        "breeze" to "a strong gust of wind",
+        "crave" to "a strong urge to"
+    )
+
+    while (true) {
+        println("Available words in dictionary ")
+        println("[sophisticated],[glow],[breeze],[crave]")
+        println("Enter a word: ")
+        val input: String = readln().trim().lowercase()
+
+        if (dict[input] == null) { //error handling for word out of dict
+            println("Word '$input' not found in dictionary")
+        } else {
+            println(dict[input])
+        }
+
+        println("Press 0 to Quit, Enter 1 to continue : ")
+        //var input2: Int = readln().toInt()
+
+        var input2: Int = readln().toIntOrNull() ?: 1
+        //toIntOrNull is used incase user enters something except 0 or 1
+        //If user enters 'abc' converts anything except Int to Null
+        //if null value is received ?:1 changes it to 1
+
+        if (input2 == 0) {
+            println("exiting")
+            break //exits out of program
+            //while loops condition is deferred so exit
+            //while(true) creates infinite loop
+        }
+    }
 
     //----------------------------------------------------------------
     //operators
